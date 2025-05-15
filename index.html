@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prodaja Majica</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Majice.balkam</h1>
+  </header>
+
+  <section id="products">
+    <div class="product" data-name="Loui Vuiton" data-price="35">
+      <img src="images/loui_vuiton.jpg" alt="Loui Vuiton Majica" />
+      <h3>Loui Vuiton</h3>
+      <p>Cena: 35€</p>
+      <button class="add-to-cart">Dodaj u korpu</button>
+    </div>
+
+    <div class="product" data-name="Fendi" data-price="30">
+      <img src="images/fendi.jpg" alt="Fendi Majica" />
+      <h3>Fendi</h3>
+      <p>Cena: 30€</p>
+      <button class="add-to-cart">Dodaj u korpu</button>
+    </div>
+
+    <div class="product" data-name="Off White" data-price="50">
+      <img src="images/off_white.jpg" alt="Off White Majica" />
+      <h3>Off White</h3>
+      <p>Cena: 50€</p>
+      <button class="add-to-cart">Dodaj u korpu</button>
+    </div>
+
+    <div class="product" data-name="Burbery" data-price="30">
+      <img src="images/burbery.jpg" alt="Burbery Majica" />
+      <h3>Burbery</h3>
+      <p>Cena: 30€</p>
+      <button class="add-to-cart">Dodaj u korpu</button>
+    </div>
+
+    <div class="product" data-name="Dior" data-price="40">
+      <img src="images/dior.jpg" alt="Dior Majica" />
+      <h3>Dior</h3>
+      <p>Cena: 40€</p>
+      <button class="add-to-cart">Dodaj u korpu</button>
+    </div>
+  </section>
+
+  <section id="cart">
+    <h2>Korpa</h2>
+    <ul id="cart-items"></ul>
+    <p>Ukupno: <span id="total">0</span>€</p>
+    <button id="checkout">Kupi putem PayPala</button>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <form action="https://formspree.io/f/xvgaddrb" method="POST">
+      <label for="name">Ime:</label><br/>
+      <input type="text" name="name" id="name" required /><br/>
+      <label for="email">Email:</label><br/>
+      <input type="email" name="email" id="email" required /><br/>
+      <label for="message">Poruka:</label><br/>
+      <textarea name="message" id="message" required></textarea><br/>
+      <button type="submit">Pošalji</button>
+    </form>
+  </section>
+
+<script src="script.js"></script>
+</body>
+</html>
